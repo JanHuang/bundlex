@@ -11,7 +11,18 @@
         }
     ],
     "require": {
-        "php": ">=7.0"
+        "php": ">=7.0",
+        "fastd/framework": "2.0.x-dev",
+        "fastd/http": "2.0.x-dev",
+        "fastd/debug": "2.0.x-dev",
+        "fastd/config": "2.0.x-dev",
+        "fastd/swoole": "2.0.x-dev",
+        "fastd/console": "2.0.x-dev",
+        "fastd/routing": "2.0.x-dev",
+        "fastd/storage": "2.0.x-dev",
+        "fastd/database": "2.0.x-dev",
+        "fastd/container": "2.0.x-dev",
+        "fastd/annotation": "2.0.x-dev"
     },
     "require-dev": {
         "phpunit/phpunit": "5.0"
@@ -19,11 +30,19 @@
     "autoload": {
         "psr-4": {
             "FastD\\": "src"
-        }
+        },
+        "files": [
+            "src/BundleX/Bundle.php"
+        ]
     },
     "extra": {
         "branch-alias": {
             "dev-master": "1.0.x-dev"
         }
+    },
+    "scripts": {
+        "post-update-cmd": "FastD\\BundleX\\Bundle::init",
+        "post-install-cmd": "FastD\\BundleX\\Bundle::init",
+        "post-create-project-cmd": "FastD\\BundleX\\Bundle::init"
     }
 }

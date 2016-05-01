@@ -1,0 +1,32 @@
+#!/usr/bin/env php
+<?php
+/**
+ * Created by PhpStorm.
+ * User: janhuang
+ * Date: 15/3/19
+ * Time: 下午8:03
+ * Github: https://www.github.com/janhuang 
+ * Coding: https://www.coding.net/janhuang
+ * SegmentFault: http://segmentfault.com/u/janhuang
+ * Blog: http://segmentfault.com/blog/janhuang
+ * Gmail: bboyjanhuang@gmail.com
+ */
+
+set_time_limit(0);
+
+date_default_timezone_set('PRC');
+
+$loader = include __DIR__ . '/../vendor/autoload.php';
+include __DIR__ . '/Application.php';
+$argvInput = new \FastD\Console\ArgvInput();
+
+$env = $argvInput->hasParameterOption(['--env', '-e']) ? $argvInput->getParameterOption(['--env', '-e']) : 'dev';
+
+$app = new Application($env);
+
+$app->boot();
+
+$console = new \FastD\Console\Console($app);
+
+$console->run($argvInput);
+
