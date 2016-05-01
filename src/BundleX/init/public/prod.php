@@ -15,14 +15,11 @@
 include __DIR__ . '/../vendor/autoload.php';
 include __DIR__ . '/../app/Application.php';
 
-$app = new Application('dev');
+$loader = include __DIR__ . '/../autoload.php';
+include __DIR__ . '/../app/Application.php';
 
+$app = new Application(Application::ENV_PROD);
 $app->boot();
-
-$request = \FastD\Http\Request::createRequestHandle();
-
-$response = $app->handleHttpRequest($request);
-
+$response = $app->createHttpRequestHandler();
 $response->send();
-
-$app->terminate($request, $response);
+$app->shutdown($app);

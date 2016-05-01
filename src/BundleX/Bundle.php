@@ -14,87 +14,214 @@
 
 namespace FastD\BundleX;
 
+/**
+ * Class Bundle
+ *
+ * @package FastD\BundleX
+ */
 class Bundle
 {
-    public static function init()
+    /**
+     * @var string
+     */
+    protected $initPath = __DIR__ . '/init';
+
+    /**
+     * @var array
+     */
+    protected $directories = [
+        'app',
+        'bin',
+        'public',
+    ];
+
+    /**
+     * @var array
+     */
+    protected $files = [
+        __DIR__ . '/init/app/application.php',
+        __DIR__ . '/init/bin/console',
+        __DIR__ . '/init/public/.htaccess',
+        __DIR__ . '/init/public/dev.php',
+        __DIR__ . '/init/public/prod.php',
+        __DIR__ . '/init/.gitignore',
+    ];
+
+    /**
+     * @var string
+     */
+    protected $ignore;
+
+    /**
+     * @var string
+     */
+    protected $path;
+
+    /**
+     * Bundle constructor.
+     * @param $path
+     */
+    public function __construct($path)
     {
-        $root = realpath('.');
-        static::createBundle($root);
-        static::createWeb($root);
-        static::createSrc($root);
+        $this->setPath($path);
     }
 
-    public static function createBundle($rootPath)
+    /**
+     * @return string
+     */
+    public function getPath()
     {
-        $boot = $rootPath . DIRECTORY_SEPARATOR . 'app';
-        static::mkdir($boot);
-        static::mkdir($boot . '/config');
-        static::mkdir($boot . '/views');
-        if (!file_exists($boot . '/application.php')) {
-            copy(__DIR__ . '/init/app/application.php', $boot . '/application.php');
+        return $this->path;
+    }
+
+    /**
+     * @param string $path
+     * @return $this
+     */
+    public function setPath($path)
+    {
+        $this->path = $path;
+        return $this;
+    }
+
+    /**
+     * @return array
+     */
+    public function getDirectories()
+    {
+        return $this->directories;
+    }
+
+    /**
+     * @param array $directories
+     * @return $this
+     */
+    public function setDirectories($directories)
+    {
+        $this->directories = $directories;
+        return $this;
+    }
+
+    /**
+     * @return array
+     */
+    public function getFiles()
+    {
+        return $this->files;
+    }
+
+    /**
+     * @param array $files
+     * @return $this
+     */
+    public function setFiles($files)
+    {
+        $this->files = $files;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getIgnore()
+    {
+        return $this->ignore;
+    }
+
+    /**
+     * @param string $ignore
+     * @return $this
+     */
+    public function setIgnore($ignore)
+    {
+        if (!file_exists($ignore)) {
+            throw new \RuntimeException(sprintf('Ignore setting ["%s"] is not such.', $ignore));
         }
-        if (!file_exists($boot . '/console')) {
-            copy(__DIR__ . '/init/app/console', $boot . '/console');
-        }
-        $ignoreFile = $rootPath . '/.gitignore';
-        if (!file_exists($ignoreFile)) {
-            touch($ignoreFile);
-        }
-        $handle = fopen($ignoreFile, "r");
-        $defineIgnore = [];
-        if ($handle) {
-            while (($buffer = fgetss($handle, 4096)) !== false) {
-                $buffer = trim(str_replace(PHP_EOL, '', $buffer));
-                if (!empty($buffer)) {
-                    $defineIgnore[] = $buffer;
-                }
-            }
-            fclose($handle);
+        $this->ignore = $ignore;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function run()
+    {
+        $this->targetDirectories();
+        $this->targetFiles();
+        $this->targetIgnore();
+    }
+
+    /**
+     * @return bool
+     */
+    protected function targetDirectories()
+    {
+        foreach ($this->directories as $directory) {
+            $directory = str_replace('//', '/', $this->getPath() . DIRECTORY_SEPARATOR . $directory);
+            $this->targetDir($directory);
         }
 
-        $length = count($defineIgnore);
+        return true;
+    }
 
-        if (empty($defineIgnore)) {
-            file_put_contents($ignoreFile,
-                <<<IGNORE
-/app
-/bin
-/.idea
-/vendor
-/public
-
-IGNORE
-            );
-        } else {
-            foreach ($defineIgnore as $key => $val) {
-                foreach (['/public', '/app', '/bin', '/.idea', '/vendor'] as $index => $ignore) {
-                    if (false === @strpos($ignore, $val) && $key === $length) {
-                        file_put_contents($ignoreFile, $ignore, FILE_APPEND);
+    /**
+     * @return bool
+     */
+    protected function targetFiles()
+    {
+        foreach ($this->files as $file) {
+            if (is_dir(dirname($file))) {
+                $toFile = str_replace($this->initPath, $this->getPath(), $file);
+                if (!file_exists($toFile)) {
+                    if (copy($file, $toFile)) {
+                        throw new \RuntimeException(sprintf('PHP copy() function execute error for ["%s"]', $file));
                     }
                 }
             }
         }
+
+        return true;
     }
 
-    public static function createWeb($rootPath)
+    /**
+     * @return int
+     */
+    protected function targetIgnore()
     {
-        $web = $rootPath . DIRECTORY_SEPARATOR . 'public';
-        static::mkdir($web);
-        copy(__DIR__ . '/init/web/dev.php', $web . '/dev.php');
-        copy(__DIR__ . '/init/web/prod.php', $web . '/prod.php');
-        copy(__DIR__ . '/init/web/.htaccess', $web . '/.htaccess');
+        $file = str_replace('//', '/', $this->getPath() . DIRECTORY_SEPARATOR . '.gitignore');
+        $ignore = explode(PHP_EOL, file_get_contents($this->ignore === null ? (__DIR__ . '/init/.gitignore') : $this->ignore));
+        array_filter($ignore);
+
+        if (file_exists($file)) {
+            $custom = file_get_contents($file);
+            $ignore = array_merge($ignore, explode(PHP_EOL, $custom));
+            unset($custom);
+        }
+
+        return file_put_contents($file, implode(PHP_EOL, array_unique($ignore)));
     }
 
-    public static function createSrc($rootPath)
-    {
-        $src = $rootPath . DIRECTORY_SEPARATOR . 'src';
-        static::mkdir($src);
-    }
-
-    protected static function mkdir($dir)
+    /**
+     * @param $dir
+     * @return bool
+     */
+    protected function targetDir($dir)
     {
         if (!file_exists($dir)) {
             mkdir($dir, 0755, true);
         }
+
+        return true;
+    }
+
+    /**
+     * @param string $path
+     * @return int
+     */
+    public static function init($path = '.')
+    {
+        $bundle = new Bundle(realpath($path));
+
+        return $bundle->run();
     }
 }

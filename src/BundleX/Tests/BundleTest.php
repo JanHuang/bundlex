@@ -14,10 +14,18 @@
 
 namespace FastD\BundleX\Tests;
 
+use FastD\BundleX\Bundle;
+
 class BundleTest extends \PHPUnit_Framework_TestCase
 {
     public function testBundle()
     {
-        $this->assertEquals(1, 1);
+        Bundle::init(__DIR__ . '/../../..');
+
+        $this->assertTrue(file_exists(__DIR__ . '/../../../app/application.php'));
+        $this->assertTrue(file_exists(__DIR__ . '/../../../public/dev.php'));
+        $this->assertTrue(file_exists(__DIR__ . '/../../../public/prod.php'));
+
+        $this->assertEquals(file_get_contents());
     }
 }
