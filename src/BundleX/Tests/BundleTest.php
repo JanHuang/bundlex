@@ -25,7 +25,5 @@ class BundleTest extends \PHPUnit_Framework_TestCase
         $this->assertTrue(file_exists(__DIR__ . '/../../../app/application.php'));
         $this->assertTrue(file_exists(__DIR__ . '/../../../public/dev.php'));
         $this->assertTrue(file_exists(__DIR__ . '/../../../public/prod.php'));
-
-        $this->assertEquals(file_get_contents());
     }
 }

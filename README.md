@@ -39,8 +39,6 @@ public/prod.php
 ## Testing
 
 ```
-cd path/to/routing
-composer install
 phpunit
 ```
 
