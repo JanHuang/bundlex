@@ -20,7 +20,6 @@ class Application extends \FastD\Framework\Kernel\AppKernel
     public function registerBundles()
     {
         return array(
-            new \Module\Welcome\Boot(),
         );
     }
 
@@ -34,7 +33,7 @@ class Application extends \FastD\Framework\Kernel\AppKernel
      *
      * @return array
      */
-    public function registerService(){return [];}
+    public function registerService(\FastD\Container\Container $container){return [];}
 
     /**
      * @return array
@@ -48,4 +47,15 @@ class Application extends \FastD\Framework\Kernel\AppKernel
      * @return void
      */
     public function registerConfiguration(\FastD\Config\Config $config){}
+
+    /**
+     * Register application configuration dynamic variable.
+     *
+     * @param \FastD\Config\Config $config
+     * @return void
+     */
+    public function registerConfigurationVariable(\FastD\Config\Config $config)
+    {
+        // TODO: Implement registerConfigurationVariable() method.
+    }
 }

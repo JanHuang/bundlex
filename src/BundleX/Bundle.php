@@ -30,11 +30,8 @@ class Bundle
         static::mkdir($boot);
         static::mkdir($boot . '/config');
         static::mkdir($boot . '/views');
-        if (!file_exists($boot . '/Application.php')) {
-            copy(__DIR__ . '/init/app/Application.php', $boot . '/Application.php');
-        }
-        if (!file_exists($boot . '/config/global.php')) {
-            copy(__DIR__ . '/init/app/global.php', $boot . '/config/global.php');
+        if (!file_exists($boot . '/application.php')) {
+            copy(__DIR__ . '/init/app/application.php', $boot . '/application.php');
         }
         if (!file_exists($boot . '/console')) {
             copy(__DIR__ . '/init/app/console', $boot . '/console');
