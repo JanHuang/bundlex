@@ -13,7 +13,7 @@ FastD Bundle 模块开发，独立包开发，将 bundle 独立部署，独立�
 
 ```json
 {
-    "fastd/bundlex": "1.0.x-dev"
+    "fastd/bundlex": "2.0.x-dev"
 }
 ```
 
