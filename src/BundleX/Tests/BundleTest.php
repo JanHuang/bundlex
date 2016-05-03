@@ -15,15 +15,16 @@
 namespace FastD\BundleX\Tests;
 
 use FastD\BundleX\Bundle;
+use FastD\Console\IO\Output;
 
 class BundleTest extends \PHPUnit_Framework_TestCase
 {
     public function testBundle()
     {
-        Bundle::init(__DIR__ . '/../../..');
+        $output = new Output();
 
-        $this->assertTrue(file_exists(__DIR__ . '/../../../app/application.php'));
-        $this->assertTrue(file_exists(__DIR__ . '/../../../public/dev.php'));
-        $this->assertTrue(file_exists(__DIR__ . '/../../../public/prod.php'));
+        $this->expectOutputString($output->format('> bundle init') . PHP_EOL);
+
+        Bundle::init(__DIR__ . '/../../..');
     }
 }

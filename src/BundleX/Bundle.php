@@ -182,7 +182,7 @@ class Bundle
                 $toFile = str_replace($this->initPath, $this->getPath(), $file);
                 if (!file_exists($toFile)) {
                     if (copy($file, $toFile)) {
-                        throw new \RuntimeException(sprintf('PHP copy() function execute error for ["%s"] => ["%s"]', $file, $toFile));
+                        continue;
                     }
                 }
             }
