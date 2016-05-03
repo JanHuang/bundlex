@@ -27,6 +27,6 @@ if (null === $loader) {
 
 $action = isset($_SERVER['argv'][1]) ? $_SERVER['argv'][1] : null;
 
-$path = __DIR__;
+$path = '.';
 
 \FastD\BundleX\Bundle::init($path, $action);

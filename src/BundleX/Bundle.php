@@ -206,7 +206,8 @@ class Bundle
                 '/vendor',
                 '/public',
                 '/.idea',
-                '/.setting'
+                '/.setting',
+                'bundle',
             ];
         }
 
