@@ -40,9 +40,7 @@
             "dev-master": "2.0.x-dev"
         }
     },
-    "scripts": {
-        "post-update-cmd": "FastD\\BundleX\\Bundle::init",
-        "post-install-cmd": "FastD\\BundleX\\Bundle::init",
-        "post-create-project-cmd": "FastD\\BundleX\\Bundle::init"
-    }
+    "bin": [
+        "bundle"
+    ]
 }

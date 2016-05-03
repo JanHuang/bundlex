@@ -14,6 +14,8 @@
 
 namespace FastD\BundleX;
 
+use FastD\Console\IO\Output;
+
 /**
  * Class Bundle
  *
@@ -44,7 +46,6 @@ class Bundle
         __DIR__ . '/init/public/.htaccess',
         __DIR__ . '/init/public/dev.php',
         __DIR__ . '/init/public/prod.php',
-        __DIR__ . '/init/.gitignore',
     ];
 
     /**
@@ -142,13 +143,20 @@ class Bundle
     }
 
     /**
+     * @param string $action
      * @return int
      */
-    public function run()
+    public function run($action)
     {
         $this->targetDirectories();
         $this->targetFiles();
         $this->targetIgnore();
+
+        $output = new Output();
+
+        $output->writeln(sprintf('> bundle %s', $action ?? 'init'));
+
+        unset($output);
     }
 
     /**
@@ -174,7 +182,7 @@ class Bundle
                 $toFile = str_replace($this->initPath, $this->getPath(), $file);
                 if (!file_exists($toFile)) {
                     if (copy($file, $toFile)) {
-                        throw new \RuntimeException(sprintf('PHP copy() function execute error for ["%s"]', $file));
+                        throw new \RuntimeException(sprintf('PHP copy() function execute error for ["%s"] => ["%s"]', $file, $toFile));
                     }
                 }
             }
@@ -189,7 +197,19 @@ class Bundle
     protected function targetIgnore()
     {
         $file = str_replace('//', '/', $this->getPath() . DIRECTORY_SEPARATOR . '.gitignore');
-        $ignore = explode(PHP_EOL, file_get_contents($this->ignore === null ? (__DIR__ . '/init/.gitignore') : $this->ignore));
+        if (null !== $this->ignore) {
+            $ignore = explode(PHP_EOL, file_get_contents($this->ignore));
+        } else {
+            $ignore = [
+                '/app',
+                '/bin',
+                '/vendor',
+                '/public',
+                '/.idea',
+                '/.setting'
+            ];
+        }
+
         array_filter($ignore);
 
         if (file_exists($file)) {
@@ -216,12 +236,13 @@ class Bundle
 
     /**
      * @param string $path
+     * @param string $action
      * @return int
      */
-    public static function init($path = '.')
+    public static function init($path = ' . ', $action = 'init')
     {
         $bundle = new Bundle(realpath($path));
 
-        return $bundle->run();
+        return $bundle->run($action);
     }
 }

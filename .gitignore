@@ -1,7 +1,8 @@
 /app
 /bin
 /vendor
-composer.phar
 /public
 /.idea
 /.setting
+
+composer.phar
