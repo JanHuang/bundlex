@@ -12,13 +12,11 @@
  * WebSite: http://www.janhuang.me
  */
 
-include __DIR__ . '/../vendor/autoload.php';
-include __DIR__ . '/../app/Application.php';
+$loader = include __DIR__ . '/../vendor/autoload.php';
 
-$loader = include __DIR__ . '/../autoload.php';
-include __DIR__ . '/../app/Application.php';
+use FastD\Framework\Kernel\AppKernel;
 
-$app = new Application(Application::ENV_PROD);
+$app = new Application(AppKernel::ENV_PROD);
 $app->boot();
 $response = $app->createHttpRequestHandler();
 $response->send();
