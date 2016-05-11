@@ -4,5 +4,6 @@
 /public
 /.idea
 /.setting
+bundle
 
 composer.phar
