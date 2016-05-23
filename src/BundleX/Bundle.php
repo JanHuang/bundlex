@@ -32,7 +32,6 @@ class Bundle
      * @var array
      */
     protected $directories = [
-        'app',
         'bin',
         'public',
     ];
@@ -201,7 +200,6 @@ class Bundle
             $ignore = explode(PHP_EOL, file_get_contents($this->ignore));
         } else {
             $ignore = [
-                '/app',
                 '/bin',
                 '/vendor',
                 '/public',
