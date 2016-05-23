@@ -45,6 +45,7 @@ class Bundle
         __DIR__ . '/init/public/.htaccess',
         __DIR__ . '/init/public/dev.php',
         __DIR__ . '/init/public/prod.php',
+        __DIR__ . '/init/public/favicon.ico',
     ];
 
     /**
