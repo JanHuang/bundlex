@@ -14,6 +14,10 @@
 
 $loader = include __DIR__ . '/../vendor/autoload.php';
 
+if (!class_alias('\Application') && file_exists(__DIR__ . '/../app/application.php')) {
+    include __DIR__ . '/../app/application.php';
+}
+
 use FastD\Framework\Kernel\AppKernel;
 
 $app = new Application(AppKernel::ENV_DEV);
