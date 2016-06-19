@@ -10,7 +10,10 @@
  * Blog: http://segmentfault.com/blog/janhuang
  * Gmail: bboyjanhuang@gmail.com
  */
-class Application extends \FastD\Framework\Kernel\AppKernel
+
+use \FastD\Framework\Kernel\AppKernel;
+
+class Application extends AppKernel
 {
     /**
      * Register project bundles into the kernel.

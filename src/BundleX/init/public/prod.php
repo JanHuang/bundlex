@@ -12,11 +12,23 @@
  * WebSite: http://www.janhuang.me
  */
 
-$loader = include __DIR__ . '/../vendor/autoload.php';
-
-if (!class_alias('\Application') && file_exists(__DIR__ . '/../app/application.php')) {
-    include __DIR__ . '/../app/application.php';
+foreach ([
+             __DIR__ . '/../../autoload.php',
+             __DIR__ . '/../vendor/autoload.php',
+             __DIR__ . '/vendor/autoload.php'
+         ] as $value) {
+    if (file_exists($value)) {
+        define('FASTD_COMPOSER_INSTALL', $value);
+        break;
+    }
 }
+
+include FASTD_COMPOSER_INSTALL;
+
+if (!class_exists('\Application') && !file_exists(__DIR__ . '/../application.php')) {
+    include __DIR__ . '/../application.php';
+}
+
 
 use FastD\Framework\Kernel\AppKernel;
 

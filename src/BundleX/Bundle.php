@@ -14,7 +14,7 @@
 
 namespace FastD\BundleX;
 
-use FastD\Console\IO\Output;
+use FastD\Console\Output\ConsoleOutput;
 
 /**
  * Class Bundle
@@ -40,7 +40,6 @@ class Bundle
      * @var array
      */
     protected $files = [
-        __DIR__ . '/init/app/application.php',
         __DIR__ . '/init/bin/console',
         __DIR__ . '/init/public/.htaccess',
         __DIR__ . '/init/public/dev.php',
@@ -152,7 +151,7 @@ class Bundle
         $this->targetFiles();
         $this->targetIgnore();
 
-        $output = new Output();
+        $output = new ConsoleOutput();
 
         $output->writeln(sprintf('> bundle %s', $action ?? 'init'));
 
@@ -207,6 +206,7 @@ class Bundle
                 '/.idea',
                 '/.setting',
                 'bundle',
+                '/storage'
             ];
         }
 

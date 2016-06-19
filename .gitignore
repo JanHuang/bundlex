@@ -1,7 +1,8 @@
-/app
 /bin
 /vendor
 /public
 /.idea
 /.setting
+bundle
+/storage
 composer.phar
