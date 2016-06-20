@@ -25,7 +25,10 @@ foreach ([
 
 include FASTD_COMPOSER_INSTALL;
 
-if (!class_exists('\Application') && !file_exists(__DIR__ . '/../application.php')) {
+if (!class_exists('\Application')) {
+    if (!file_exists(__DIR__ . '/../application.php')) {
+        throw new RuntimeException(sprintf('Application is not found. Please init bundlex. php bundlex'));
+    }
     include __DIR__ . '/../application.php';
 }
 

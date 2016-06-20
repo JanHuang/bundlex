@@ -30,9 +30,6 @@
         ]
     },
     "autoload-dev": {
-        "files": [
-            "application.php"
-        ]
     },
     "extra": {
         "branch-alias": {
