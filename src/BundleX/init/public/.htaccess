@@ -9,5 +9,5 @@ DirectoryIndex dev.php
   RewriteCond %{REQUEST_FILENAME} !-f
 
 
-  RewriteRule ^(.*)$ index.php/$1 [QSA,PT,L]
+  RewriteRule ^(.*)$ dev.php/$1 [QSA,PT,L]
 </IfModule>

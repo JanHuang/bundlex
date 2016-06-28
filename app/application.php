@@ -23,6 +23,7 @@ class Application extends AppKernel
     public function registerBundles()
     {
         return array(
+            new \TestBundle\TestBundle(),
         );
     }
 

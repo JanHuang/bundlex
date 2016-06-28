@@ -26,6 +26,12 @@
         ]
     },
     "autoload-dev": {
+        "psr-4": {
+            "": "src"
+        },
+        "files": [
+            "app/application.php"
+        ]
     },
     "extra": {
         "branch-alias": {
