@@ -1,10 +1,10 @@
 /bin
 /vendor
 /public
-/app
 /.idea
 /.setting
 bundle
 /storage
+/app
 composer.phar
 /src/*Bundle

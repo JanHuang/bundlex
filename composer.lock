@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8ee84dc070a4331a774297ff2dab7291",
+    "hash": "973b451410943358364f3fd8f1552aee",
     "content-hash": "583f1f5ad941c111b0f32c98bacaa758",
     "packages": [
         {
@@ -309,12 +309,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/framework.git",
-                "reference": "fe1ec3dd01b682b74a6563079e7e214a874f5717"
+                "reference": "36826706bc86ead3ecd5e30b9fcd13fe0ca6d384"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/framework/zipball/fe1ec3dd01b682b74a6563079e7e214a874f5717",
-                "reference": "fe1ec3dd01b682b74a6563079e7e214a874f5717",
+                "url": "https://api.github.com/repos/JanHuang/framework/zipball/36826706bc86ead3ecd5e30b9fcd13fe0ca6d384",
+                "reference": "36826706bc86ead3ecd5e30b9fcd13fe0ca6d384",
                 "shasum": ""
             },
             "require": {
@@ -363,7 +363,7 @@
             "keywords": [
                 "FastD Framework Kernel"
             ],
-            "time": "2016-06-28 07:34:32"
+            "time": "2016-06-28 09:03:44"
         },
         {
             "name": "fastd/generator",

@@ -34,13 +34,14 @@ class Bundle
     protected $directories = [
         'bin',
         'public',
+        'app'
     ];
 
     /**
      * @var array
      */
     protected $files = [
-        __DIR__ . '/init/application.php',
+        __DIR__ . '/init/app/application.php',
         __DIR__ . '/init/bin/console',
         __DIR__ . '/init/public/.htaccess',
         __DIR__ . '/init/public/dev.php',

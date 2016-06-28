@@ -28,10 +28,10 @@
     "autoload-dev": {
         "psr-4": {
             "": "src"
-        },
-        "files": [
-            "app/application.php"
-        ]
+        }
+    },
+    "config": {
+        "bin-dir": "bin"
     },
     "extra": {
         "branch-alias": {
