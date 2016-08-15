@@ -1,8 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/4.1/phpunit.xsd"
-         backupGlobals="false"
+<phpunit
          colors="true"
          bootstrap="./vendor/autoload.php"
         >
@@ -11,8 +7,8 @@
         <ini name="error_reporting" value="-16385"/>
     </php>
     <testsuites>
-        <testsuite name="FastD BundleX Tests">
-            <directory>./src/*/Tests</directory>
+        <testsuite name="BundleX Tests">
+            <directory>tests</directory>
         </testsuite>
     </testsuites>
 </phpunit>

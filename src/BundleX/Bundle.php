@@ -61,6 +61,7 @@ class Bundle
 
     /**
      * Bundle constructor.
+     *
      * @param $path
      */
     public function __construct($path)
@@ -204,7 +205,6 @@ class Bundle
             $ignore = [
                 '/bin',
                 '/vendor',
-                '/public',
                 '/.idea',
                 '/.setting',
                 'bundle',
@@ -241,9 +241,9 @@ class Bundle
      * @param string $action
      * @return int
      */
-    public static function init($path = ' . ', $action = 'init')
+    public static function init($path = '.', $action = 'init')
     {
-        $bundle = new Bundle(realpath($path));
+        $bundle = new Bundle($path);
 
         return $bundle->run($action);
     }

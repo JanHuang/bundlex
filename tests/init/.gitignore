@@ -1,0 +1,6 @@
+/bin
+/vendor
+/.idea
+/.setting
+bundle
+/storage

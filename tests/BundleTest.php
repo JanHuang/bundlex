@@ -15,16 +15,16 @@
 namespace FastD\BundleX\Tests;
 
 use FastD\BundleX\Bundle;
-use FastD\Console\IO\Output;
+use FastD\Console\Output\ConsoleOutput;
 
 class BundleTest extends \PHPUnit_Framework_TestCase
 {
     public function testBundle()
     {
-        $output = new Output();
+        $output = new ConsoleOutput();
 
-        $this->expectOutputString($output->format('> bundle init') . PHP_EOL);
+        $this->expectOutputString($output->writeln('> bundle init'));
 
-        Bundle::init(__DIR__ . '/../../..');
+        Bundle::init(__DIR__ . '/init');
     }
 }
