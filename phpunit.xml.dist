@@ -1,13 +1,9 @@
 <phpunit
-         colors="true"
-         bootstrap="./vendor/autoload.php"
-        >
-    <php>
-        <!-- Silence E_USER_DEPRECATED (-16385 == -1 & ~E_USER_DEPRECATED) -->
-        <ini name="error_reporting" value="-16385"/>
-    </php>
+        colors="true"
+        bootstrap="./vendor/autoload.php"
+>
     <testsuites>
-        <testsuite name="BundleX Tests">
+        <testsuite name="BundleX">
             <directory>tests</directory>
         </testsuite>
     </testsuites>

@@ -20,7 +20,7 @@ class App extends Application
     public function registerPath($path)
     {
         $routes = $path.'/config/routes.php';
-        if (!file_exists($routes)) {
+        if (file_exists($routes)) {
             $this->apps[] = $path;
             include $routes;
         }
@@ -30,7 +30,7 @@ class App extends Application
 $app = new App(__DIR__);
 
 foreach ($requires as $require) {
-    $app->registerPath($require . '/../');
+    $app->registerPath($require.'/../');
 }
 
 return $app;

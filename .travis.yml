@@ -6,4 +6,4 @@ php:
 
 install: composer install -vvv
 
-script: phpunit
+script: bin/phpunit
