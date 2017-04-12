@@ -1,7 +1,7 @@
 {
     "name": "fastd/bundlex",
-    "type": "library",
-    "description": "The fastd module framework.",
+    "type": "project",
+    "description": "The fastd bundles framework",
     "license": "MIT",
     "keywords": ["Bundle X"],
     "authors": [
@@ -12,33 +12,24 @@
     ],
     "require": {
         "php": ">=7.0",
-        "fastd/framework": "~2.0.0"
+        "fastd/fastd": "3.1.x-dev",
+        "fastd/swoole": "^2.0@beta"
     },
     "require-dev": {
-        "phpunit/phpunit": "5.0"
+        "phpunit/phpunit": "^5.0",
+        "phpunit/dbunit": "^2.0",
+        "fastd/postsd": "dev-develop",
+        "fastd/mediad": "dev-develop",
+        "fastd/tagd": "dev-develop",
+        "fastd/commentd": "dev-develop",
+        "fastd/userd": "dev-develop"
     },
     "autoload": {
         "psr-4": {
             "FastD\\": "src"
-        },
-        "files": [
-            "src/BundleX/Bundle.php"
-        ]
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "": "src"
         }
     },
     "config": {
         "bin-dir": "bin"
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "2.0.x-dev"
-        }
-    },
-    "bin": [
-        "bundlex"
-    ]
+    }
 }

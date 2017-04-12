@@ -1,4 +1,4 @@
-DirectoryIndex dev.php
+DirectoryIndex index.php
 
 <IfModule mod_rewrite.c>
   Options +FollowSymlinks
@@ -9,5 +9,5 @@ DirectoryIndex dev.php
   RewriteCond %{REQUEST_FILENAME} !-f
 
 
-  RewriteRule ^(.*)$ dev.php/$1 [QSA,PT,L]
+  RewriteRule ^(.*)$ index.php/$1 [QSA,PT,L]
 </IfModule>
