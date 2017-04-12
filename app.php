@@ -19,8 +19,11 @@ class App extends Application
 
     public function registerPath($path)
     {
-        $this->apps[] = $path;
-        include $path.'/config/routes.php';
+        $routes = $path.'/config/routes.php';
+        if (!file_exists($routes)) {
+            $this->apps[] = $path;
+            include $routes;
+        }
     }
 }
 
