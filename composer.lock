@@ -4,50 +4,9 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c142f08fbc4222dceb72d2ceff79a4f6",
-    "content-hash": "ef276e4326ea5c8026bbfe2671e09dbc",
+    "hash": "75fa2471350e8aeba769df07cc2b8525",
+    "content-hash": "e2a301aaee95c7cd0dbf98d8bfd1798f",
     "packages": [
-        {
-            "name": "aliyuncs/oss-sdk-php",
-            "version": "v2.2.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/aliyun/aliyun-oss-php-sdk.git",
-                "reference": "28ec53756dba73cca89d3c2131bb44626ce25ab3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/aliyun/aliyun-oss-php-sdk/28ec53756dba73cca89d3c2131bb44626ce25ab3.zip",
-                "reference": "28ec53756dba73cca89d3c2131bb44626ce25ab3",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.0",
-                "satooshi/php-coveralls": "~1.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "OSS\\": "src/OSS"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Aliyuncs",
-                    "homepage": "http://www.aliyun.com"
-                }
-            ],
-            "description": "Aliyun OSS SDK for PHP",
-            "homepage": "http://www.aliyun.com/product/oss/",
-            "time": "2017-01-18 08:56:15"
-        },
         {
             "name": "catfan/medoo",
             "version": "v1.2.1",
@@ -140,49 +99,6 @@
                 }
             ],
             "time": "2017-02-17 03:27:50"
-        },
-        {
-            "name": "fastd/commentd",
-            "version": "dev-develop",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/JanHuang/cemmentd.git",
-                "reference": "45c4d4a32adee25f70732ef49d568ee251eb97d1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/JanHuang/cemmentd/45c4d4a32adee25f70732ef49d568ee251eb97d1.zip",
-                "reference": "45c4d4a32adee25f70732ef49d568ee251eb97d1",
-                "shasum": ""
-            },
-            "require": {
-                "fastd/fastd": "3.1.x-dev",
-                "fastd/swoole": "^2.0@beta",
-                "php": ">=5.6"
-            },
-            "require-dev": {
-                "phpunit/dbunit": "^2.0"
-            },
-            "type": "project",
-            "autoload": {
-                "psr-4": {
-                    "": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "JanHuang",
-                    "email": "bboyjanhuang@gmail.com"
-                }
-            ],
-            "keywords": [
-                "FastD"
-            ],
-            "time": "2017-04-12 08:22:02"
         },
         {
             "name": "fastd/config",
@@ -281,12 +197,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/fastD.git",
-                "reference": "22f546bb30c080084dc772d0b1eb2bd0cb290e79"
+                "reference": "30f57bd02dc399a1dd97e32d10840dbdda94c873"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/JanHuang/fastD/22f546bb30c080084dc772d0b1eb2bd0cb290e79.zip",
-                "reference": "22f546bb30c080084dc772d0b1eb2bd0cb290e79",
+                "url": "https://files.phpcomposer.com/files/JanHuang/fastD/30f57bd02dc399a1dd97e32d10840dbdda94c873.zip",
+                "reference": "30f57bd02dc399a1dd97e32d10840dbdda94c873",
                 "shasum": ""
             },
             "require": {
@@ -337,7 +253,7 @@
             "keywords": [
                 "FastD"
             ],
-            "time": "2017-04-11 12:11:49"
+            "time": "2017-04-14 10:18:48"
         },
         {
             "name": "fastd/http",
@@ -382,52 +298,6 @@
                 "http"
             ],
             "time": "2017-04-10 15:05:17"
-        },
-        {
-            "name": "fastd/mediad",
-            "version": "dev-develop",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/JanHuang/mediad.git",
-                "reference": "2ff57507da803f0134b07f753e2428f88f4e108a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/JanHuang/mediad/2ff57507da803f0134b07f753e2428f88f4e108a.zip",
-                "reference": "2ff57507da803f0134b07f753e2428f88f4e108a",
-                "shasum": ""
-            },
-            "require": {
-                "aliyuncs/oss-sdk-php": "~2.0",
-                "fastd/fastd": "3.1.x-dev",
-                "fastd/swoole": "^2.0@beta",
-                "johnlui/aliyun-oss": "^2.2",
-                "php": ">=5.6",
-                "qiniu/php-sdk": "^7.1"
-            },
-            "require-dev": {
-                "phpunit/dbunit": "^2.0"
-            },
-            "type": "project",
-            "autoload": {
-                "psr-4": {
-                    "": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "JanHuang",
-                    "email": "bboyjanhuang@gmail.com"
-                }
-            ],
-            "keywords": [
-                "FastD"
-            ],
-            "time": "2017-04-12 08:27:10"
         },
         {
             "name": "fastd/middleware",
@@ -502,49 +372,6 @@
                 }
             ],
             "time": "2017-02-22 15:38:42"
-        },
-        {
-            "name": "fastd/postsd",
-            "version": "dev-develop",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/JanHuang/postsd.git",
-                "reference": "c4f1c3562ac5da7a77928d4b92b04a6f8bb46532"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/JanHuang/postsd/c4f1c3562ac5da7a77928d4b92b04a6f8bb46532.zip",
-                "reference": "c4f1c3562ac5da7a77928d4b92b04a6f8bb46532",
-                "shasum": ""
-            },
-            "require": {
-                "fastd/fastd": "3.1.x-dev",
-                "fastd/swoole": "^2.0@beta",
-                "php": ">=5.6"
-            },
-            "require-dev": {
-                "phpunit/dbunit": "^2.0"
-            },
-            "type": "project",
-            "autoload": {
-                "psr-4": {
-                    "": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "JanHuang",
-                    "email": "bboyjanhuang@gmail.com"
-                }
-            ],
-            "keywords": [
-                "FastD"
-            ],
-            "time": "2017-04-12 08:31:47"
         },
         {
             "name": "fastd/routing",
@@ -636,60 +463,17 @@
             "time": "2017-04-01 15:43:54"
         },
         {
-            "name": "fastd/tagd",
-            "version": "dev-develop",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/JanHuang/tagd.git",
-                "reference": "f5504ea7101c1ec6d73357777e5123aa17e32503"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/JanHuang/tagd/f5504ea7101c1ec6d73357777e5123aa17e32503.zip",
-                "reference": "f5504ea7101c1ec6d73357777e5123aa17e32503",
-                "shasum": ""
-            },
-            "require": {
-                "fastd/fastd": "3.1.x-dev",
-                "fastd/swoole": "^2.0@beta",
-                "php": ">=5.6"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.6"
-            },
-            "type": "project",
-            "autoload": {
-                "psr-4": {
-                    "": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "JanHuang",
-                    "email": "bboyjanhuang@gmail.com"
-                }
-            ],
-            "keywords": [
-                "FastD"
-            ],
-            "time": "2017-04-12 08:24:31"
-        },
-        {
             "name": "fastd/testing",
-            "version": "v0.3.0",
+            "version": "v0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/testing.git",
-                "reference": "d74e68d54c28713215d87b7b518ddb9da98676ad"
+                "reference": "3fa745e92ab438fa44015ce488f53f69038313e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/JanHuang/testing/d74e68d54c28713215d87b7b518ddb9da98676ad.zip",
-                "reference": "d74e68d54c28713215d87b7b518ddb9da98676ad",
+                "url": "https://files.phpcomposer.com/files/JanHuang/testing/3fa745e92ab438fa44015ce488f53f69038313e1.zip",
+                "reference": "3fa745e92ab438fa44015ce488f53f69038313e1",
                 "shasum": ""
             },
             "require": {
@@ -712,51 +496,7 @@
                     "email": "bboyjanhuang@gmail.com"
                 }
             ],
-            "time": "2017-04-05 10:31:46"
-        },
-        {
-            "name": "fastd/userd",
-            "version": "dev-develop",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/JanHuang/userd.git",
-                "reference": "80e51f6ed7823ca1ddabfac1e5b3e4ba20020c7c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/JanHuang/userd/80e51f6ed7823ca1ddabfac1e5b3e4ba20020c7c.zip",
-                "reference": "80e51f6ed7823ca1ddabfac1e5b3e4ba20020c7c",
-                "shasum": ""
-            },
-            "require": {
-                "fastd/fastd": "3.1.x-dev",
-                "fastd/swoole": "^2.0@beta",
-                "overtrue/socialite": "~1.0",
-                "php": ">=5.6"
-            },
-            "require-dev": {
-                "phpunit/dbunit": "^2.0"
-            },
-            "type": "project",
-            "autoload": {
-                "psr-4": {
-                    "": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "JanHuang",
-                    "email": "bboyjanhuang@gmail.com"
-                }
-            ],
-            "keywords": [
-                "FastD"
-            ],
-            "time": "2017-04-12 08:33:12"
+            "time": "2017-04-12 10:53:09"
         },
         {
             "name": "fastd/utils",
@@ -795,226 +535,6 @@
                 }
             ],
             "time": "2017-03-18 04:11:43"
-        },
-        {
-            "name": "guzzlehttp/guzzle",
-            "version": "6.2.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "8d6c6cc55186db87b7dc5009827429ba4e9dc006"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/guzzle/guzzle/8d6c6cc55186db87b7dc5009827429ba4e9dc006.zip",
-                "reference": "8d6c6cc55186db87b7dc5009827429ba4e9dc006",
-                "shasum": ""
-            },
-            "require": {
-                "guzzlehttp/promises": "^1.0",
-                "guzzlehttp/psr7": "^1.4",
-                "php": ">=5.5"
-            },
-            "require-dev": {
-                "ext-curl": "*",
-                "phpunit/phpunit": "^4.0",
-                "psr/log": "^1.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "6.2-dev"
-                }
-            },
-            "autoload": {
-                "files": [
-                    "src/functions_include.php"
-                ],
-                "psr-4": {
-                    "GuzzleHttp\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
-                }
-            ],
-            "description": "Guzzle is a PHP HTTP client library",
-            "homepage": "http://guzzlephp.org/",
-            "keywords": [
-                "client",
-                "curl",
-                "framework",
-                "http",
-                "http client",
-                "rest",
-                "web service"
-            ],
-            "time": "2017-02-28 22:50:30"
-        },
-        {
-            "name": "guzzlehttp/promises",
-            "version": "v1.3.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/guzzle/promises.git",
-                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/guzzle/promises/a59da6cf61d80060647ff4d3eb2c03a2bc694646.zip",
-                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Promise\\": "src/"
-                },
-                "files": [
-                    "src/functions_include.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
-                }
-            ],
-            "description": "Guzzle promises library",
-            "keywords": [
-                "promise"
-            ],
-            "time": "2016-12-20 10:07:11"
-        },
-        {
-            "name": "guzzlehttp/psr7",
-            "version": "1.4.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/guzzle/psr7.git",
-                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/guzzle/psr7/f5b8a8512e2b58b0071a7280e39f14f72e05d87c.zip",
-                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0",
-                "psr/http-message": "~1.0"
-            },
-            "provide": {
-                "psr/http-message-implementation": "1.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Psr7\\": "src/"
-                },
-                "files": [
-                    "src/functions_include.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
-                },
-                {
-                    "name": "Tobias Schultze",
-                    "homepage": "https://github.com/Tobion"
-                }
-            ],
-            "description": "PSR-7 message implementation that also provides common utility methods",
-            "keywords": [
-                "http",
-                "message",
-                "request",
-                "response",
-                "stream",
-                "uri",
-                "url"
-            ],
-            "time": "2017-03-20 17:10:46"
-        },
-        {
-            "name": "johnlui/aliyun-oss",
-            "version": "v2.2.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/johnlui/AliyunOSS.git",
-                "reference": "f10fdec4775e22a8295366981e1daf48c62ce5d3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/johnlui/AliyunOSS/f10fdec4775e22a8295366981e1daf48c62ce5d3.zip",
-                "reference": "f10fdec4775e22a8295366981e1daf48c62ce5d3",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/AliyunOSS.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "John Lui",
-                    "email": "wenhanlv@gmail.com"
-                }
-            ],
-            "description": "阿里云 OSS 官方 SDK 的 Composer 封装，支持任何 PHP 项目，包括 Laravel、Symfony、TinyLara 等等。",
-            "homepage": "https://github.com/johnlui/AliyunOSS",
-            "keywords": [
-                "AliyunOSS",
-                "aliyun",
-                "oss"
-            ],
-            "time": "2017-04-06 06:48:21"
         },
         {
             "name": "monolog/monolog",
@@ -1093,56 +613,6 @@
                 "psr-3"
             ],
             "time": "2017-03-13 07:08:03"
-        },
-        {
-            "name": "overtrue/socialite",
-            "version": "1.0.24",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/overtrue/socialite.git",
-                "reference": "2040343fd871e6d745a1d2ffb9b353097efffa36"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/overtrue/socialite/2040343fd871e6d745a1d2ffb9b353097efffa36.zip",
-                "reference": "2040343fd871e6d745a1d2ffb9b353097efffa36",
-                "shasum": ""
-            },
-            "require": {
-                "guzzlehttp/guzzle": "~5.0|~6.0",
-                "php": ">=5.4.0",
-                "symfony/http-foundation": "~2.6|~2.7|~2.8|~3.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "~0.9",
-                "phpunit/phpunit": "~4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Overtrue\\Socialite\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "overtrue",
-                    "email": "anzhengchao@gmail.com"
-                }
-            ],
-            "description": "A collection of OAuth 2 packages that extracts from laravel/socialite.",
-            "keywords": [
-                "login",
-                "oauth",
-                "qq",
-                "social",
-                "wechat",
-                "weibo"
-            ],
-            "time": "2017-04-08 11:39:52"
         },
         {
             "name": "psr/cache",
@@ -1286,57 +756,6 @@
                 "psr-3"
             ],
             "time": "2016-10-10 12:19:37"
-        },
-        {
-            "name": "qiniu/php-sdk",
-            "version": "v7.1.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/qiniu/php-sdk.git",
-                "reference": "b91653485e36b4797d7a302cc86c49695e47a642"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/qiniu/php-sdk/b91653485e36b4797d7a302cc86c49695e47a642.zip",
-                "reference": "b91653485e36b4797d7a302cc86c49695e47a642",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "~2.3"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Qiniu\\": "src/Qiniu"
-                },
-                "files": [
-                    "src/Qiniu/functions.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Qiniu",
-                    "email": "sdk@qiniu.com",
-                    "homepage": "http://www.qiniu.com"
-                }
-            ],
-            "description": "Qiniu Resource (Cloud) Storage SDK for PHP",
-            "homepage": "http://developer.qiniu.com/",
-            "keywords": [
-                "cloud",
-                "qiniu",
-                "sdk",
-                "storage"
-            ],
-            "time": "2016-11-18 02:57:31"
         },
         {
             "name": "robmorgan/phinx",
@@ -1697,59 +1116,6 @@
             "time": "2017-03-26 15:47:15"
         },
         {
-            "name": "symfony/http-foundation",
-            "version": "v3.2.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "cb0b6418f588952c9290b3df4ca650f1b7ab570a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/symfony/http-foundation/cb0b6418f588952c9290b3df4ca650f1b7ab570a.zip",
-                "reference": "cb0b6418f588952c9290b3df4ca650f1b7ab570a",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5.9",
-                "symfony/polyfill-mbstring": "~1.1"
-            },
-            "require-dev": {
-                "symfony/expression-language": "~2.8|~3.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\HttpFoundation\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony HttpFoundation Component",
-            "homepage": "https://symfony.com",
-            "time": "2017-04-04 15:30:56"
-        },
-        {
             "name": "symfony/polyfill-mbstring",
             "version": "v1.3.0",
             "source": {
@@ -1866,6 +1232,47 @@
     ],
     "packages-dev": [
         {
+            "name": "aliyuncs/oss-sdk-php",
+            "version": "v2.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aliyun/aliyun-oss-php-sdk.git",
+                "reference": "8853812991abeb81c53a23c5d150e00d6c060f39"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/aliyun/aliyun-oss-php-sdk/8853812991abeb81c53a23c5d150e00d6c060f39.zip",
+                "reference": "8853812991abeb81c53a23c5d150e00d6c060f39",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0",
+                "satooshi/php-coveralls": "~1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "OSS\\": "src/OSS"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aliyuncs",
+                    "homepage": "http://www.aliyun.com"
+                }
+            ],
+            "description": "Aliyun OSS SDK for PHP",
+            "homepage": "http://www.aliyun.com/product/oss/",
+            "time": "2017-04-14 08:05:28"
+        },
+        {
             "name": "doctrine/instantiator",
             "version": "1.0.5",
             "source": {
@@ -1920,17 +1327,456 @@
             "time": "2015-06-14 21:17:01"
         },
         {
-            "name": "myclabs/deep-copy",
-            "version": "1.6.0",
+            "name": "fastd/commentd",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
-                "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "5a5a9fc8025a08d8919be87d6884d5a92520cefe"
+                "url": "https://github.com/JanHuang/cemmentd.git",
+                "reference": "45c4d4a32adee25f70732ef49d568ee251eb97d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/myclabs/DeepCopy/5a5a9fc8025a08d8919be87d6884d5a92520cefe.zip",
-                "reference": "5a5a9fc8025a08d8919be87d6884d5a92520cefe",
+                "url": "https://files.phpcomposer.com/files/JanHuang/cemmentd/45c4d4a32adee25f70732ef49d568ee251eb97d1.zip",
+                "reference": "45c4d4a32adee25f70732ef49d568ee251eb97d1",
+                "shasum": ""
+            },
+            "require": {
+                "fastd/fastd": "3.1.x-dev",
+                "fastd/swoole": "^2.0@beta",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "phpunit/dbunit": "^2.0"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "JanHuang",
+                    "email": "bboyjanhuang@gmail.com"
+                }
+            ],
+            "keywords": [
+                "FastD"
+            ],
+            "time": "2017-04-12 08:22:02"
+        },
+        {
+            "name": "fastd/mediad",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JanHuang/mediad.git",
+                "reference": "2ff57507da803f0134b07f753e2428f88f4e108a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/JanHuang/mediad/2ff57507da803f0134b07f753e2428f88f4e108a.zip",
+                "reference": "2ff57507da803f0134b07f753e2428f88f4e108a",
+                "shasum": ""
+            },
+            "require": {
+                "aliyuncs/oss-sdk-php": "~2.0",
+                "fastd/fastd": "3.1.x-dev",
+                "fastd/swoole": "^2.0@beta",
+                "johnlui/aliyun-oss": "^2.2",
+                "php": ">=5.6",
+                "qiniu/php-sdk": "^7.1"
+            },
+            "require-dev": {
+                "phpunit/dbunit": "^2.0"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "JanHuang",
+                    "email": "bboyjanhuang@gmail.com"
+                }
+            ],
+            "keywords": [
+                "FastD"
+            ],
+            "time": "2017-04-12 08:27:10"
+        },
+        {
+            "name": "fastd/postsd",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JanHuang/postsd.git",
+                "reference": "c4f1c3562ac5da7a77928d4b92b04a6f8bb46532"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/JanHuang/postsd/c4f1c3562ac5da7a77928d4b92b04a6f8bb46532.zip",
+                "reference": "c4f1c3562ac5da7a77928d4b92b04a6f8bb46532",
+                "shasum": ""
+            },
+            "require": {
+                "fastd/fastd": "3.1.x-dev",
+                "fastd/swoole": "^2.0@beta",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "phpunit/dbunit": "^2.0"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "JanHuang",
+                    "email": "bboyjanhuang@gmail.com"
+                }
+            ],
+            "keywords": [
+                "FastD"
+            ],
+            "time": "2017-04-12 08:31:47"
+        },
+        {
+            "name": "fastd/tagd",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JanHuang/tagd.git",
+                "reference": "f5504ea7101c1ec6d73357777e5123aa17e32503"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/JanHuang/tagd/f5504ea7101c1ec6d73357777e5123aa17e32503.zip",
+                "reference": "f5504ea7101c1ec6d73357777e5123aa17e32503",
+                "shasum": ""
+            },
+            "require": {
+                "fastd/fastd": "3.1.x-dev",
+                "fastd/swoole": "^2.0@beta",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.6"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "JanHuang",
+                    "email": "bboyjanhuang@gmail.com"
+                }
+            ],
+            "keywords": [
+                "FastD"
+            ],
+            "time": "2017-04-12 08:24:31"
+        },
+        {
+            "name": "fastd/userd",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JanHuang/userd.git",
+                "reference": "80e51f6ed7823ca1ddabfac1e5b3e4ba20020c7c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/JanHuang/userd/80e51f6ed7823ca1ddabfac1e5b3e4ba20020c7c.zip",
+                "reference": "80e51f6ed7823ca1ddabfac1e5b3e4ba20020c7c",
+                "shasum": ""
+            },
+            "require": {
+                "fastd/fastd": "3.1.x-dev",
+                "fastd/swoole": "^2.0@beta",
+                "overtrue/socialite": "~1.0",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "phpunit/dbunit": "^2.0"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "JanHuang",
+                    "email": "bboyjanhuang@gmail.com"
+                }
+            ],
+            "keywords": [
+                "FastD"
+            ],
+            "time": "2017-04-12 08:33:12"
+        },
+        {
+            "name": "guzzlehttp/guzzle",
+            "version": "6.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "8d6c6cc55186db87b7dc5009827429ba4e9dc006"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/guzzle/guzzle/8d6c6cc55186db87b7dc5009827429ba4e9dc006.zip",
+                "reference": "8d6c6cc55186db87b7dc5009827429ba4e9dc006",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/promises": "^1.0",
+                "guzzlehttp/psr7": "^1.4",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "phpunit/phpunit": "^4.0",
+                "psr/log": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.2-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle is a PHP HTTP client library",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "rest",
+                "web service"
+            ],
+            "time": "2017-02-28 22:50:30"
+        },
+        {
+            "name": "guzzlehttp/promises",
+            "version": "v1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/promises.git",
+                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/guzzle/promises/a59da6cf61d80060647ff4d3eb2c03a2bc694646.zip",
+                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Promise\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle promises library",
+            "keywords": [
+                "promise"
+            ],
+            "time": "2016-12-20 10:07:11"
+        },
+        {
+            "name": "guzzlehttp/psr7",
+            "version": "1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/guzzle/psr7/f5b8a8512e2b58b0071a7280e39f14f72e05d87c.zip",
+                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/http-message": "~1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "homepage": "https://github.com/Tobion"
+                }
+            ],
+            "description": "PSR-7 message implementation that also provides common utility methods",
+            "keywords": [
+                "http",
+                "message",
+                "request",
+                "response",
+                "stream",
+                "uri",
+                "url"
+            ],
+            "time": "2017-03-20 17:10:46"
+        },
+        {
+            "name": "johnlui/aliyun-oss",
+            "version": "v2.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnlui/AliyunOSS.git",
+                "reference": "f10fdec4775e22a8295366981e1daf48c62ce5d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/johnlui/AliyunOSS/f10fdec4775e22a8295366981e1daf48c62ce5d3.zip",
+                "reference": "f10fdec4775e22a8295366981e1daf48c62ce5d3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/AliyunOSS.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "John Lui",
+                    "email": "wenhanlv@gmail.com"
+                }
+            ],
+            "description": "阿里云 OSS 官方 SDK 的 Composer 封装，支持任何 PHP 项目，包括 Laravel、Symfony、TinyLara 等等。",
+            "homepage": "https://github.com/johnlui/AliyunOSS",
+            "keywords": [
+                "AliyunOSS",
+                "aliyun",
+                "oss"
+            ],
+            "time": "2017-04-06 06:48:21"
+        },
+        {
+            "name": "myclabs/deep-copy",
+            "version": "1.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/myclabs/DeepCopy.git",
+                "reference": "8e6e04167378abf1ddb4d3522d8755c5fd90d102"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/myclabs/DeepCopy/8e6e04167378abf1ddb4d3522d8755c5fd90d102.zip",
+                "reference": "8e6e04167378abf1ddb4d3522d8755c5fd90d102",
                 "shasum": ""
             },
             "require": {
@@ -1959,7 +1805,57 @@
                 "object",
                 "object graph"
             ],
-            "time": "2017-01-26 22:05:40"
+            "time": "2017-04-12 18:52:22"
+        },
+        {
+            "name": "overtrue/socialite",
+            "version": "1.0.24",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/overtrue/socialite.git",
+                "reference": "2040343fd871e6d745a1d2ffb9b353097efffa36"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/overtrue/socialite/2040343fd871e6d745a1d2ffb9b353097efffa36.zip",
+                "reference": "2040343fd871e6d745a1d2ffb9b353097efffa36",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "~5.0|~6.0",
+                "php": ">=5.4.0",
+                "symfony/http-foundation": "~2.6|~2.7|~2.8|~3.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Overtrue\\Socialite\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "overtrue",
+                    "email": "anzhengchao@gmail.com"
+                }
+            ],
+            "description": "A collection of OAuth 2 packages that extracts from laravel/socialite.",
+            "keywords": [
+                "login",
+                "oauth",
+                "qq",
+                "social",
+                "wechat",
+                "weibo"
+            ],
+            "time": "2017-04-08 11:39:52"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -2616,6 +2512,57 @@
             "time": "2016-12-08 20:27:08"
         },
         {
+            "name": "qiniu/php-sdk",
+            "version": "v7.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/qiniu/php-sdk.git",
+                "reference": "b91653485e36b4797d7a302cc86c49695e47a642"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/qiniu/php-sdk/b91653485e36b4797d7a302cc86c49695e47a642.zip",
+                "reference": "b91653485e36b4797d7a302cc86c49695e47a642",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~2.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Qiniu\\": "src/Qiniu"
+                },
+                "files": [
+                    "src/Qiniu/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Qiniu",
+                    "email": "sdk@qiniu.com",
+                    "homepage": "http://www.qiniu.com"
+                }
+            ],
+            "description": "Qiniu Resource (Cloud) Storage SDK for PHP",
+            "homepage": "http://developer.qiniu.com/",
+            "keywords": [
+                "cloud",
+                "qiniu",
+                "sdk",
+                "storage"
+            ],
+            "time": "2016-11-18 02:57:31"
+        },
+        {
             "name": "sebastian/code-unit-reverse-lookup",
             "version": "1.0.1",
             "source": {
@@ -3127,6 +3074,59 @@
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
             "time": "2016-10-03 07:35:21"
+        },
+        {
+            "name": "symfony/http-foundation",
+            "version": "v3.2.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/http-foundation.git",
+                "reference": "cb0b6418f588952c9290b3df4ca650f1b7ab570a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/symfony/http-foundation/cb0b6418f588952c9290b3df4ca650f1b7ab570a.zip",
+                "reference": "cb0b6418f588952c9290b3df4ca650f1b7ab570a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9",
+                "symfony/polyfill-mbstring": "~1.1"
+            },
+            "require-dev": {
+                "symfony/expression-language": "~2.8|~3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\HttpFoundation\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony HttpFoundation Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-04-04 15:30:56"
         },
         {
             "name": "webmozart/assert",

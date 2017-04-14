@@ -38,4 +38,6 @@ $app = include __DIR__.'/app.php';
 
 $console = new Console($app);
 
+$console->add(new Run());
+
 $console->run();

@@ -10,7 +10,7 @@
 return [
     'default' => [
         'adapter' => 'mysql',
-        'name' => 'fastd',
+        'name' => 'test',
         'host' => '127.0.0.1',
         'user' => 'root',
         'pass' => '',
