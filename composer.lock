@@ -1332,12 +1332,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/cemmentd.git",
-                "reference": "45c4d4a32adee25f70732ef49d568ee251eb97d1"
+                "reference": "37d43110364b206457f8d852dd7d21a399fee45a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/JanHuang/cemmentd/45c4d4a32adee25f70732ef49d568ee251eb97d1.zip",
-                "reference": "45c4d4a32adee25f70732ef49d568ee251eb97d1",
+                "url": "https://files.phpcomposer.com/files/JanHuang/cemmentd/37d43110364b206457f8d852dd7d21a399fee45a.zip",
+                "reference": "37d43110364b206457f8d852dd7d21a399fee45a",
                 "shasum": ""
             },
             "require": {
@@ -1367,7 +1367,7 @@
             "keywords": [
                 "FastD"
             ],
-            "time": "2017-04-12 08:22:02"
+            "time": "2017-04-19 12:04:58"
         },
         {
             "name": "fastd/mediad",
@@ -1375,12 +1375,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/mediad.git",
-                "reference": "08acac45f17d9551debdc25fbb9c967eca8e8d01"
+                "reference": "45287060f58f414d020fea6d5e5dc9af91357860"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/JanHuang/mediad/08acac45f17d9551debdc25fbb9c967eca8e8d01.zip",
-                "reference": "08acac45f17d9551debdc25fbb9c967eca8e8d01",
+                "url": "https://files.phpcomposer.com/files/JanHuang/mediad/45287060f58f414d020fea6d5e5dc9af91357860.zip",
+                "reference": "45287060f58f414d020fea6d5e5dc9af91357860",
                 "shasum": ""
             },
             "require": {
@@ -1413,7 +1413,7 @@
             "keywords": [
                 "FastD"
             ],
-            "time": "2017-04-18 00:14:01"
+            "time": "2017-04-19 11:58:18"
         },
         {
             "name": "fastd/postsd",
@@ -1421,12 +1421,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/postsd.git",
-                "reference": "be92fd51b840341a2a3d355c2d3b4475a471180b"
+                "reference": "72be344287ffd0fd8f9cdab8dcaa698b93ba4a42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/JanHuang/postsd/be92fd51b840341a2a3d355c2d3b4475a471180b.zip",
-                "reference": "be92fd51b840341a2a3d355c2d3b4475a471180b",
+                "url": "https://files.phpcomposer.com/files/JanHuang/postsd/72be344287ffd0fd8f9cdab8dcaa698b93ba4a42.zip",
+                "reference": "72be344287ffd0fd8f9cdab8dcaa698b93ba4a42",
                 "shasum": ""
             },
             "require": {
@@ -1456,7 +1456,7 @@
             "keywords": [
                 "FastD"
             ],
-            "time": "2017-04-18 00:12:58"
+            "time": "2017-04-19 11:56:16"
         },
         {
             "name": "fastd/tagd",
@@ -1464,12 +1464,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/tagd.git",
-                "reference": "2a424fbbb6642268e61bb5b78650428c444ed76f"
+                "reference": "264e193bd45129ad939c1873689dde8148c4e5a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/JanHuang/tagd/2a424fbbb6642268e61bb5b78650428c444ed76f.zip",
-                "reference": "2a424fbbb6642268e61bb5b78650428c444ed76f",
+                "url": "https://files.phpcomposer.com/files/JanHuang/tagd/264e193bd45129ad939c1873689dde8148c4e5a8.zip",
+                "reference": "264e193bd45129ad939c1873689dde8148c4e5a8",
                 "shasum": ""
             },
             "require": {
@@ -1499,7 +1499,7 @@
             "keywords": [
                 "FastD"
             ],
-            "time": "2017-04-18 00:15:27"
+            "time": "2017-04-19 11:57:26"
         },
         {
             "name": "fastd/userd",
